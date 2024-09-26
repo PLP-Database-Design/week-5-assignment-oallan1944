@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Provider ID</th>
+                    <th>Fist Name</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <% results.forEach(row => {%>
+                    <tr>
+                        <td><%= row.patient_id %></td>
+                        <td><%= row.first_name %></td>
+                    </tr>
+                    <%});%>
+            </tbody>
+            
+        
+        </table>
+    </body>
+</html>
+
